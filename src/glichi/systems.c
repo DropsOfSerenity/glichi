@@ -29,7 +29,8 @@ int glichi_systems_init() {
 		// TODO(justin): handle failure
 	}
 	glfwSetWindowCloseCallback(window, _glichi_systems_close_callback);
-
+	// setting sticky keys here so we can poll every frame
+	glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
 	// in order to use the opengl api context must be active.
 	glfwMakeContextCurrent(window);
 	glewInit();
