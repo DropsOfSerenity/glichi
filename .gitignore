@@ -1,0 +1,4 @@
+demobuild
+buildobj
+*.ninja_*
+build.ninja
